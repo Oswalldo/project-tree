@@ -5,7 +5,7 @@ Nombre: Jose Manuel Alavarado Balderrama
 Registro: 222052384
 
 ### Descripcion:
-Este es un projecto web cuya funcionalidad es la de filtrar datos de un archivo <code><i>.csv</i></code>  El projecto busca considencias en cualquiera de las categorias del archivo.
+Este es un proyecto web cuya funcionalidad es la de filtrar datos de un archivo <code><i>.csv</i></code>  El proyecto busca coincidencias en cualquiera de las categorias del archivo.
 
 
 <mark>*Importante*</mark>:  El archivo debe tener un ***header*** llamado ***ID***.

@@ -15,7 +15,7 @@ export class AVLTree<K,V> extends BinaryTree<K,V>{
         }else if(!value){
             throw new Error("Value can't be neither null nor undefined")
         }else{
-            super.root = this.insertCore(key, value, this.root)
+            this.root = this.insertCore(key, value, this.root)
         }
     }
 
@@ -44,6 +44,14 @@ export class AVLTree<K,V> extends BinaryTree<K,V>{
     }
 
     private rebalance(node: BinaryNode<K,V>): BinaryNode<K,V>{
+
+        if(!node.isLeftEmpty()){
+            node.left = this.rebalance(node.left!)
+        }
+        if(!node.isRightEmpty()){
+            node.right = this.rebalance(node.right!)
+        }
+
         let difference = this.difference(node)
 
         if(difference > this.MAX_DIFFERENCE){
